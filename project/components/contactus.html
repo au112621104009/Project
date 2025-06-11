@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>47th Cafe | Contact</title>
+<link rel="icon" href="../src/coffee.png">
+ 
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: "Segoe UI", sans-serif;
+  width: 100%;
+  scroll-behavior: smooth;
+}
+/* Navigation Bar */
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: peachpuff;
+  padding: 1rem 2rem;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0%;
+  margin: 0%;
+  width: 100%;
+}
+
+.logo h3 {
+  font-size: 1.5rem;
+}
+
+.logo p {
+  font-size: 0.9rem;
+  margin-top: -8px;
+  letter-spacing: 2px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+}
+
+.nav-links a:hover {
+  color: gray;
+}
+
+.icon2 {
+  width: 30px;
+  height: 30px;
+}
+
+h1, h3 {
+
+ font-family: 'Playfair Display', serif;
+}
+
+.hero {
+ background: #f9ede6;
+ text-align: center;
+ padding: 2.5em 2em;
+}
+.hero h1 {
+ font-size: 2.5em;
+ margin-bottom: 0.5em;
+}
+.hero p {
+ font-size: 1.1em;
+}
+
+.contact-section {
+ display: flex;
+ justify-content: space-between;
+ padding: 2em;
+ gap: 2em;
+ max-width: 1200px;
+ margin: auto;
+}
+.contact-form {
+ flex: 1;
+
+ display: flex;
+ flex-direction: column;
+ gap: 1em;
+}
+.contact-form .row {
+ display: flex;
+ gap: 1em;
+}
+.contact-form input, .contact-form textarea {
+ width: 100%;
+
+ padding: 0.75em;
+ border: 1px solid #ccc;
+ border-radius: 4px;
+}
+.contact-form textarea {
+ height: 100px;
+}
+.contact-form button {
+ padding: 0.75em;
+ background-color: #5a5f52;
+ color: white;
+ border: none;
+ border-radius: 4px;
+ cursor: pointer;
+}
+
+.contact-info {
+ flex: 1;
+ border-left: 1px solid #ccc;
+ padding-left: 2em;
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 1em;
+}
+.contact-info h3 {
+ margin-bottom: 0.3em;
+}
+.social-icons a {
+ margin-right: 0.5em;
+ font-size: 1.2em;
+
+ text-decoration: none;
+}
+
+.map-section iframe {
+ width: 100%;
+ height: 300px;
+ border: none;
+}
+/* Footer */
+.footer {
+  background-color: #3b493f;
+  color: white;
+  padding: 50px 50px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 250px;
+}
+
+.newsletter,
+.contact,
+.socials {
+  flex: 1;
+  min-width: 250px;
+}
+
+.newsletter h3,
+.contact h3,
+.socials h3 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.newsletter p {
+  margin-bottom: 15px;
+}
+
+.newsletter input[type="email"] {
+  padding: 8px;
+  width: 100%;
+  margin-bottom: 10px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border: 1px outset white;
+}
+
+.checkbox-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.checkbox-row input {
+  margin-right: 8px;
+}
+
+.newsletter button {
+  padding: 8px 16px;
+  background-color: transparent;
+  border: none;
+  color: #3b493f;
+  cursor: pointer;
+  border: 1px outset white;
+  color: white;
+  font-weight: bold;
+}
+
+.newsletter button:hover {
+  background-color: #ddd;
+}
+
+.contact p {
+  line-height: 1.6;
+}
+
+.socials h3 {
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.socials h3:hover {
+  text-decoration: underline;
+}
+.footer-bottom {
+ display: block;
+  text-align: center;
+  color: #000;
+  padding-top: 20px;
+  font-size: 16px;
+  
+}
+
+.footer-bottom a {
+  color: #000;
+  text-decoration: underline;
+}
+
+  </style>
+
+</head>
+<body>
+ 
+
+    <nav class="navigation">
+      <div class="logo">
+        <h3>47<sup>th</sup></h3>
+        <p><i>Cafe</i></p>
+      </div>
+      <div class="nav-links">
+        <a href="./home.html">Home</a>
+        <a href="This.html">This is us</a>
+        <a href="./Menu.html">Menu</a>
+        <a href="./onlineservice.html">Order</a>
+        <a href="./contactus.html">Contact Us</a>
+        <img src="../src/Dimg.png" alt="profile" class="icon2" />
+        <a href="#">Login</a>
+        <a href="#">Cart(0)</a>
+      </div>
+    </nav>
+  <section class="hero">
+
+    <h1>Let's Connect</h1>
+    <p>I'm a paragraph. Click here to add your own text and edit me.<br>Let your users get to know you.</p>
+  </section>
+
+  <section class="contact-section">
+    <form class="contact-form">
+      <div class="row">
+
+        <input type="text" placeholder="First name *" required>
+        <input type="text" placeholder="Last name *" required>
+      </div>
+
+      <input type="email" placeholder="Email *" required>
+      <textarea placeholder="Message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+
+    <div class="contact-info">
+
+      <div>
+        <h3>Address</h3>
+        <p>500 Terry Francine St.<br>San Francisco, CA 94158</p>
+      </div>
+      <div>
+        <h3>Phone</h3>
+
+        <p>123-456-7890</p>
+      </div>
+      <div>
+        <h3>Email</h3>
+        <p>info@mysite.com</p>
+      </div>
+      <div>
+        <h3>Follow</h3>
+        <div class="social-icons">
+          <a href="#">🔵</a>
+          <a href="#">🐦</a>
+          <a href="#">📸</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="map-section">
+    <iframe src="https://www.google.com/maps?q=500+Terry+Francine+St,+San+Francisco,+CA+94158&output=embed"
+            allowfullscreen loading="lazy"></iframe>
+  </section>
+  <footer class="footer">
+      <div class="footer-container">
+        <div class="newsletter">
+          <h3>Newsletter</h3>
+          <p>Stay up to date with all the latest from 47th Cafe</p>
+          <form>
+            <label>Email *</label><br /><br />
+            <input type="email" placeholder="Enter your email" required /><br />
+            <div class="checkbox-row">
+              <input type="checkbox" id="subscribe" />
+              <label for="subscribe"
+                >Yes, subscribe me to your newsletter*
+              </label>
+              <div style="padding-left: 10%">
+                <button type="submit">Join</button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="contact">
+          <h3>Talk to Us</h3>
+          <p>123-456-7890<br />info@mysite.com</p>
+          <p>500 Terry Francine St.<br />San Francisco, CA 94158</p>
+        </div>
+
+        <div class="socials">
+          <h3>Instagram</h3>
+          <h3>Facebook</h3>
+          <h3>Twitter</h3>
+        </div>
+      </div>
+       <div class="footer-bottom">
+      <p>&copy; 2035 by 47th Cafe. Powered and secured by <a href="https://www.wix.com" target="_blank">Wix</a></p>
+    </div>
+    </footer>
+
+</body>
+</html>

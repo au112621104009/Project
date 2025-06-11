@@ -1,0 +1,284 @@
+* {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: "Times New Roman", Times, serif;
+
+  width: 100%;
+  scroll-behavior: smooth;
+}
+/* Navigation Bar */
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: peachpuff;
+  padding: 1rem 2rem;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0%;
+  margin: 0%;
+  width: 100%;
+}
+
+.logo h3 {
+  font-size: 1.5rem;
+}
+
+.logo p {
+  font-size: 0.9rem;
+  margin-top: -8px;
+  letter-spacing: 2px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+}
+
+.nav-links a:hover {
+  color: gray;
+}
+
+.icon2 {
+  width: 30px;
+  height: 30px;
+}
+h1,
+h3 {
+  font-family: "Playfair Display", serif;
+}
+
+.thisisusparent {
+  width: 100%;
+  height: 40vh;
+  background-color: #fbf2e8;
+}
+.thisisushead {
+  padding-top: 4%;
+  display: flex;
+  justify-content: center;
+  font-size: 4rem;
+}
+.thisisuspara {
+  font-size: 1rem;
+  word-spacing: 0.1rem;
+  font-family: sans-serif;
+  /* font-weight: 100; */
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.onep {
+  padding-top: 10px;
+  padding-bottom: 5px;
+  font-weight: lighter;
+  letter-spacing: 0.1rem;
+  line-height: 3;
+}
+.twop {
+  letter-spacing: 0.1rem;
+}
+.thisisusparent2 {
+  display: flex;
+  justify-content: space-evenly;
+  overflow-y: hidden;
+  gap: 3%;
+}
+.portionpart1 {
+  height: 700px;
+  width: 625px;
+  /* margin-right: 60px; */
+}
+.portionhead {
+  /* display: inline-block; */
+  padding-top: 150px;
+  font-size: 3rem;
+  /* padding-left: 10%; */
+  width: 450px;
+  line-height: 1.5;
+}
+.portionpara {
+  width: 500px;
+  letter-spacing: 0.1rem;
+  font-size: 1rem;
+  /* padding-right: 20px; */
+  padding-top: 40px;
+  line-height: 1.5;
+  font-family: sans-serif;
+  color: rgb(103, 102, 102);
+  margin-right: 50px;
+}
+
+button {
+  background-color: white;
+  color: rgb(145, 144, 144);
+  font-size: 1rem;
+  padding: 12px 24px;
+  border: 2px solid rgb(161, 160, 160);
+  cursor: pointer;
+  font-size: 16px;
+  width: 200px;
+  margin-top: 40px;
+}
+.portionpara button:hover {
+  background-color: #404d3c;
+  transition: ease-in-out 0.4s;
+}
+.portionpara button a {
+  color: rgb(145, 144, 144);
+  text-decoration: none;
+}
+
+.portionpara button a:hover {
+  color: white;
+}
+.thisisusparent3 {
+  background-color: #60695d;
+  height: 150px;
+}
+.portion3 {
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 60px;
+  font-size: 2rem;
+  font-family: serif;
+}
+.thisisusparent4 {
+  display: flex;
+  justify-content: space-evenly;
+  overflow-y: hidden;
+}
+.portionpart2 {
+  height: 700px;
+  width: 625px;
+}
+.a1 {
+  margin-left: 50px;
+}
+
+/* Footer */
+.footer {
+  background-color: #3b493f;
+  color: white;
+  padding: 50px 50px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 250px;
+}
+
+.newsletter,
+.contact,
+.socials {
+  flex: 1;
+  min-width: 250px;
+}
+
+.newsletter h3,
+.contact h3,
+.socials h3 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.newsletter p {
+  margin-bottom: 15px;
+}
+
+.newsletter input[type="email"] {
+  padding: 8px;
+  width: 100%;
+  margin-bottom: 10px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border: 1px outset white;
+}
+
+.checkbox-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.checkbox-row input {
+  margin-right: 8px;
+}
+
+.newsletter button {
+  padding: 8px 16px;
+  background-color: transparent;
+  border: none;
+  color: #3b493f;
+  cursor: pointer;
+  border: 1px outset white;
+  color: white;
+  font-weight: bold;
+}
+
+.newsletter button:hover {
+  background-color: #ddd;
+}
+
+.contact p {
+  line-height: 1.6;
+}
+
+.socials h3 {
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.socials h3:hover {
+  text-decoration: underline;
+}
+.footer-bottom {
+  display: block;
+  text-align: center;
+  color: #000;
+  padding-top: 20px;
+  font-size: 16px;
+}
+
+.footer-bottom a {
+  color: #000;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  #header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .top-bar {
+    justify-content: center;
+  }
+
+  .navigation {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
