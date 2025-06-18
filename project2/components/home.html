@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Event Coordinator | Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+      crossorigin="anonymous"
+      defer
+    ></script>
+  </head>
+  <style>
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+   overflow-x: hidden;
+}
+
+/* NAVIGATION */
+#nava {
+  color: #af9453;
+  font-family: sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.flower {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.dropdown-menu .dropdown-item {
+  text-align: center;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  color: #af9453;
+  background-color: white;
+}
+   .part1 {
+  background: url("../src/p21.avif") center/cover no-repeat;
+  position: relative;
+  height: 100vh;
+  color: #fff;
+  background-attachment: fixed;
+}
+
+.part1-title {
+  font-family: "Newsreader", serif;
+  line-height: 1.8;
+}
+
+.letter-spaced {
+  letter-spacing: 0.7rem;
+}
+
+.bg-container {
+  background-image: url("../src/p23.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+#carddesign {
+  height: 500px;
+}
+
+.carousel-item {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.bgimage {
+  position: relative;
+}
+
+/* Overlay for center-aligned card */
+.carousel-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  z-index: 10;
+  background-attachment: fixed;
+}
+
+.overlay-center {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  z-index: 11;
+}
+
+/* Shared card styles */
+.gallery-card,
+.carousel-card {
+  background-color: rgba(184, 156, 91, 0.95);
+  color: white;
+  padding: 3rem 2rem;
+  text-align: center;
+  width: 400px;
+  height: 500px;
+  border: none;
+  z-index: 11;
+}
+
+.gallery-card .card-title,
+.carousel-card .card-title {
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1rem;
+}
+
+.gallery-card .card-text,
+.carousel-card .card-text {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.gallery-btn,
+.carousel-btn {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 0.5rem 2rem;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+}
+
+.gallery-btn:hover,
+.carousel-btn:hover {
+  background-color: white;
+  color: #b89c5b;
+}
+
+.footer {
+      background-color: #b39551;
+      color: white;
+      padding: 40px 0;
+    }
+    .footer a {
+      color: white;
+      text-decoration: none;
+    }
+    .footer a:hover {
+      text-decoration: underline;
+    }
+    .social-icons a {
+      color: white;
+      margin-right: 15px;
+      font-size: 18px;
+    }
+    .footer hr {
+      border-color: white;
+      opacity: 0.2;
+    }
+    .book-btn {
+      border: 1px solid white;
+      color: white;
+      padding: 10px 30px;
+      background: transparent;
+    }
+    .book-btn:hover {
+      background-color: white;
+      color: #b39551;
+    }
+
+  </style>
+  <body>
+      <header class="navigation sticky-top bg-white">
+      <div class="container pt-3 pb-2">
+        <nav class="navbar navbar-expand-md">
+          <div class="container">
+            <img class="flower" src="../src/flower.png" alt="flower" />
+            <a class="navbar-brand fw-light" id="nava" href="#">
+              TWILIGHT EVENTS
+            </a>
+
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#mainNavbar"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNavbar">
+              <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                <li class="nav-item active">
+                  <a class="nav-link" href="./home.html">Home</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link"
+                    href="./services.html"
+                    id="services"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Services
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="services">
+                    <li>
+                      <a class="dropdown-item" href="./services.html">All Services</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#wedding">Wedding</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#private"
+                        >Private Parties</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#corporate"
+                        >Corporate Events</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="./about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Login</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- part1 -->
+    <section
+      class="part1 d-flex justify-content-center align-items-center text-center"
+    >
+      <div class="container part1-content">
+        <h1 class="display-1 part1-title letter-spaced">
+          <span class="d-block display-1 d-sm-block d-md-none">Creating</span>
+          <span class="d-block display-2 d-none d-md-block d-lg-none"
+            >Creating</span
+          >
+          <span class="d-block display-1 d-none d-lg-block">Creating</span>
+
+          <span class="d-block display-1 d-sm-block d-md-none"
+            >Unforgettable</span
+          >
+          <span class="d-block display-2 d-none d-md-block d-lg-none"
+            >Unforgettable</span
+          >
+          <span class="d-block display-1 d-none d-lg-block">Unforgettable</span>
+
+          <span class="d-block display-1 d-sm-block d-md-none">Memories</span>
+          <span class="d-block display-2 d-none d-md-block d-lg-none"
+            >Memories</span
+          >
+          <span class="d-block display-1 d-none d-lg-block">Memories</span>
+        </h1>
+        <a href="#" class="btn btn-outline-light btn-lg mt-4 pt-3 pb-3 px-5"
+          >DISCOVERY CALL</a
+        >
+        <div class="d-flex justify-content-center mt-4 arrow-icon">
+          <i class="bi bi-chevron-down text-white fs-2"></i>
+        </div>
+      </div>
+    </section>
+    <!-- part2 -->
+    <section class="py-5">
+      <div class="container-fluid px-0">
+        <div class="row gx-4">
+          <!-- Left white space -->
+          <div class="col-lg-1 col-md-1 col-sm-1"></div>
+          <div class="col-lg-10 col-md-10 col-sm-10">
+            <div class="row g-4">
+              <div
+                class="col-lg-4 col-md-5 col-sm-12 text-white d-flex flex-column justify-content-center align-items-center text-center p-5"
+                style="background-color: #555;"
+              >
+                <h2
+                  class="fw-light text-uppercase fs-1"
+                  style="letter-spacing: 0.5rem; overflow-y: hidden;"
+                >
+                  Services
+                </h2>
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/4151/4151484.png"
+                  alt="Icon"
+                  style="width: 60px; padding-top: 20px;"
+                  class="my-3"
+                />
+                <p class="lead mb-3 pt-5 pb-5 fs-2">
+                  Turn your dream into<br />
+                  a reality
+                </p>
+                <a
+                  href="#"
+                 class="btn btn-outline-light text-white px-5 py-3"
+                  style="letter-spacing: 1px ;background-color: #af9453;"
+                >
+                  DISCOVER
+                </a>
+              </div>
+
+              <!-- Right Column (Image) -->
+              <div class="col-lg-8 col-md-7 col-sm-12">
+                <img
+                  src="../src/p22.avif"
+                  alt="Event Image"
+                  class="img-fluid w-100 h-100"
+                  style="object-fit: cover"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- Right white space -->
+          <div class="col-lg-1 col-md-0 col-sm-0"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- part3 -->
+
+    <section class="py-5 bg-white text-center position-relative">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="mb-4" style="font-size: 4rem; color: #333">&rdquo;</div>
+            <p class="fs-3 fs-sm-5 fs-md-5 fs-lg-1"
+              style="
+                line-height: 1.8;
+                max-width: 700px;
+                word-spacing: 0.5rem;
+                margin: 0 auto;
+                font-size: 3rem;
+                color: #333;
+              "
+            >
+              I'm a testimonial. Click to <br />
+              edit me and add text that says<br />
+              something nice about you and <br />
+              your services.
+            </p>
+            <p class="mt-3" style="color: #b89c5b; font-size: 0.9rem">
+              Shauna & Ali
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="position-absolute top-50 start-0 translate-middle-y ps-3">
+        <a
+          href="#"
+          class="text-decoration-none"
+          style="color: #b89c5b; font-size: 5rem"
+        >
+          &#8592;
+        </a>
+      </div>
+      <div class="position-absolute top-50 end-0 translate-middle-y pe-3">
+        <a
+          href="#"
+          class="text-decoration-none"
+          style="color: #b89c5b; font-size: 5rem"
+        >
+          &#8594;
+        </a>
+      </div>
+    </section>
+
+    <!-- part4 -->
+ <section class="bgimage">
+    <!-- Carousel -->
+<div id="bgCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" style="background-image: url('../src/p.jpg');"></div>
+    <div class="carousel-item" style="background-image: url('../src/p23.jpg');"></div>
+    <div class="carousel-item" style="background-image: url('../src/p24.jpg');"></div>
+  </div>
+
+  <!-- Arrows -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#bgCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#bgCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<!-- Overlay Gallery Card -->
+    <div class="carousel-overlay">
+      <div class="container-fluid">
+         <div class="row w-100">
+        <div
+          class="col-12 col-md-4 offset-md-7 d-flex justify-content-center justify-content-md-end"
+        >
+          <div class="card gallery-card" id="carddesign">
+            <div class="card-body">
+            <h2 class="card-title mb-3 mt-4 fs-3 fs-sm-3 fs-md-3 fs-lg-1" style="overflow-y: hidden;">GALLERY</h2>
+              <div class="mb-3">
+                <img
+                  src="https://img.icons8.com/ios/50/ffffff/spa-flower.png"
+                  alt="icon"
+                  style="width: 50px; margin-top: 30px"
+                />
+              </div>
+            <p class="card-text mb-4 mt-4 fs-sm-5 fs-md-2 fs-lg-1">
+                Unforgettable<br />Memories</p>
+            <a href="#" class="btn gallery-btn  pt-3 pb-3 mt-3 fs-6 fs-sm-5 fs-md-4">Discover</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+         </section>
+         <br><br>
+
+<!-- footer -->
+         <footer class="footer">
+  <div class="container">
+    <div class="row text-center text-md-start">
+      <!-- Address -->
+      <div class="col-md-3 mb-4">
+        <p class="mb-0">500 Terry Francine Street<br>San Francisco<br>CA 94158</p>
+      </div>
+      <!-- Contact -->
+      <div class="col-md-4 mb-4 border-start border-end px-4">
+        <p class="mb-1">Tel: 123-456-7890</p>
+        <p class="mb-1">Fax: 123-456-7890</p>
+        <p class="mb-0">info@mysite.com</p>
+      </div>
+      <!-- Copyright -->
+      <div class="col-md-5 mb-4">
+        <p class="mb-1">&copy;2035 by Twilight Events.</p>
+        <p class="mb-2">Powered and secured by <a href="#">Wix</a></p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-pinterest-p"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <!-- Button -->
+    <div class="text-center mt-3">
+      <button class="book-btn">BOOK NOW</button>
+    </div>
+  </div>
+</footer>
+  </body>
+</html>

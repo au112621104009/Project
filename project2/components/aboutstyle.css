@@ -1,0 +1,107 @@
+.navigation {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: white;
+}
+/* NAVIGATION */
+#nava {
+  color: #af9453;
+  font-family: sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.flower {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.dropdown-menu .dropdown-item {
+  text-align: center;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  color: #af9453;
+  background-color: white;
+}
+.h1 {
+  font-size: 40px;
+  color: #af9453;
+  text-shadow: #af9453 2px 2px 5px;
+}
+.icon {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+.p {
+  color: #af9453;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.image {
+  border-radius: 1rem;
+  animation-delay: 0.5s;
+  animation-duration: 0.5s;
+  animation-name: zoom;
+  animation-timing-function: ease-in-out;
+}
+@keyframes zoom {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.fixed-height-card {
+  height: 100%;
+  overflow: hidden;
+}
+
+.card-img-fixed {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card {
+  background-color: #fbfbfb;
+}
+.cards:hover {
+  box-shadow: 0 10px 25px #af9453;
+}
+.footer {
+  background-color: #b39551;
+  color: white;
+  padding: 40px 0;
+}
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+.social-icons a {
+  color: white;
+  margin-right: 15px;
+  font-size: 18px;
+}
+.footer hr {
+  border-color: white;
+  opacity: 0.2;
+}
+.book-btn {
+  border: 1px solid white;
+  color: white;
+  padding: 10px 30px;
+  background: transparent;
+}
+.book-btn:hover {
+  background-color: white;
+  color: #b39551;
+}
