@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
+
+body {
+  font-family: "Playfair Display", serif;
+}
+
+.navbar {
+  background-color: #c2e5c2 !important;
+  display: flex;
+  justify-content: space-around;
+}
+
+#nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-item a:hover {
+  color: black;
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
+button {
+  background: linear-gradient(45deg, #b0e1b0 0%, #73a073 100%);
+  color: #fff;
+  border: none;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 100px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background: linear-gradient(45deg, #919191, #070707);
+  transform: scale(1.05);
+  color: #fff;
+}
+.nav-link.heart-icon:hover {
+  color: transparent;
+  position: relative;
+}
+footer {
+  background-color: #c2e5c2;
+}

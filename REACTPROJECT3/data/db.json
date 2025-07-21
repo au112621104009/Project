@@ -1,0 +1,213 @@
+{
+  "items1": [
+    {
+      "id": "1",
+      "img": "jew1.png",
+      "name": "Chocker",
+      "price": "99",
+      "cart": false
+    },
+    {
+      "id": "2",
+      "img": "jew2.webp",
+      "name": "Stone Chain",
+      "price": "399",
+      "cart": false
+    },
+    {
+      "id": "3",
+      "img": "jew3.webp",
+      "name": "Earring",
+      "price": "499",
+      "cart": false
+    },
+    {
+      "id": "4",
+      "img": "jew4.webp",
+      "name": "Earring",
+      "price": "499",
+      "cart": false
+    },
+    {
+      "id": "5",
+      "img": "jew5.jpg",
+      "name": "Earring",
+      "price": "499",
+      "cart": false
+    },
+    {
+      "id": "6",
+      "img": "jew6.webp",
+      "name": "Earring",
+      "price": "499",
+      "cart": false
+    },
+    {
+      "id": "7",
+      "img": "jew7.webp",
+      "name": "Earring",
+      "price": "499",
+      "cart": false
+    },
+    {
+      "id": "7",
+      "img": "jew8.jpg",
+      "name": "Earring",
+      "price": "499",
+      "cart": false
+    }
+  ],
+  "items2": [
+    {
+      "id": "1",
+      "img": "craft1.jpg",
+      "name": "Customized Cup",
+      "price": "99",
+      "cart": false
+    },
+    {
+      "id": "2",
+      "img": "craft2.webp",
+      "name": "ScrapBook",
+      "price": "99",
+      "cart": false
+    },
+    {
+      "id": "3",
+      "img": "craft3.jpg",
+      "name": "Photo Cards",
+      "price": "99",
+      "cart": false
+    },
+    {
+      "id": "4",
+      "img": "craft4.webp",
+      "name": "Captured in Moments",
+      "price": "99",
+      "cart": false
+    },
+    {
+      "id": "5",
+      "img": "craft5.webp",
+      "name": "Women's Braclets",
+      "price": "99",
+      "cart": false
+    },
+    {
+      "id": "6",
+      "img": "craft6.webp",
+      "name": "Men's Braclets",
+      "price": "99",
+      "cart": false
+    },
+    {
+      "id": "7",
+      "img": "craft7.webp",
+      "name": "Vintage Letters",
+      "price": "99",
+      "cart": false
+    },
+    {
+      "id": "8",
+      "img": "craft8.webp",
+      "name": "Photo Memory",
+      "price": "99",
+      "cart": false
+    }
+  ],
+  "items3": [
+    {
+      "id": "1",
+      "img": "chat1.webp",
+      "name": "Pani Puri",
+      "price": "99",
+      "cart": false
+    },
+    {
+      "id": "2",
+      "img": "chat2.webp",
+      "name": "Squizza",
+      "price": "99",
+      "cart": false
+    },
+    {
+      "id": "3",
+      "img": "chat3.JPG",
+      "name": "Muruku Sandwich",
+      "price": "99",
+      "cart": false
+    },
+    {
+      "id": "4",
+      "img": "chat4.jpg",
+      "name": "Choco Bun",
+      "price": "99",
+      "cart": false
+    },
+    {
+      "id": "5",
+      "img": "chat5.jpg",
+      "name": "Palkova Bun",
+      "price": "99",
+      "cart": false
+    },
+    {
+      "id": "6",
+      "img": "chat6.webp",
+      "name": "Jam Bun",
+      "price": "99",
+      "cart": false
+    },
+    {
+      "id": "7",
+      "img": "chat7.webp",
+      "name": "Garlic Bread",
+      "price": "99",
+      "cart": false
+    },
+    {
+      "id": "8",
+      "img": "chat8.webp",
+      "name": "Zingy Parcel",
+      "price": "99",
+      "cart": false
+    }
+  ],
+  
+  "reviews": [
+    {
+      "id": "1",
+      "name": "Anjali Rao",
+      "text": "The biryani was heavenly! So flavorful and perfectly cooked. My go-to food app from now on!",
+      "stars": "5",
+      "image": "https://i.pravatar.cc/150?img=5"
+    },
+    {
+      "id": "2",
+      "name": "Karthik Mehta",
+      "text": "Delivery was super quick and the food was still warm. Loved the packaging too!",
+      "stars": "4",
+      "image": "https://i.pravatar.cc/150?img=12"
+    },
+    {
+      "id": "3",
+      "name": "Sahana V",
+      "text": "Tried the muruku sandwich for the first time — it's a must-have!",
+      "stars": "5",
+      "image": "https://i.pravatar.cc/150?img=9"
+    },
+    {
+      "id": "4",
+      "name": "Ravi Kumar",
+      "text": "Great taste, but the bun could be softer. Overall decent.",
+      "stars": "3",
+      "image": "https://i.pravatar.cc/150?img=7"
+    },
+    {
+      "id": "b057",
+      "name": "jhfjk",
+      "text": "nhjd",
+      "stars": "3"
+    }
+  ]
+}

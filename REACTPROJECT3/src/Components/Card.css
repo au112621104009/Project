@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+ font-family: 'Playfair Display', serif;
+  background-color: #c2e5c24f;
+  color: #333;
+}
+
+.heading {
+  text-align: center;
+  margin: 24px 0;
+  font-size: 2rem;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+  padding: 0 24px 24px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.12);
+}
+
+.card-image {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+}
+
+.card-content {
+  flex: 1;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  margin: 0 0 8px;
+}
+
+.card-price {
+  font-size: 1.1rem;
+  color: #777;
+  margin-bottom: 16px;
+}
+
+.cart-button-container {
+  text-align: center;
+  margin: 24px 0;
+}
+
+.show-cart-button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  /* padding: 200px 24px; */
+  /* font-size: 1rem; */
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.show-cart-button:hover {
+  background-color: #45a049;
+}
+
+#heartbutton {
+  background: none;            
+  border: none;                 
+  font-size: 1.5rem;           
+  cursor: pointer;             
+  color: #000;                 
+  position: absolute;         
+  top: 400px;              
+  right: 10px;            
+  z-index: 2;                 
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+#heartbutton:hover{
+  transform: scale(1.2);     
+  color: #e25578;           
+  background: none;            
+}
+
+

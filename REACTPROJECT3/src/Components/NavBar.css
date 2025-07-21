@@ -1,0 +1,97 @@
+/* Navbar.css */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+
+/* Overall navbar styling */
+.navbar {
+  background-color: #c2e5c2 !important;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 0.75rem 1rem;
+     font-family: 'Playfair Display', serif;
+
+}
+
+/* Nav list container */
+#nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Base style for nav links and dropdown toggle */
+.nav-link,
+.dropdown-toggle {
+  color: white !important;
+  font-weight: 500;
+  padding: 10px 16px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  background-color: transparent;
+}
+
+/* Hover & active styling (shared) */
+.nav-link:hover,
+.dropdown-toggle:hover,
+.nav-link.active {
+  color: black !important;
+  transform: scale(1.05);
+  font-weight: bold;
+}
+
+/* Dropdown menu */
+.nav-item.dropdown .dropdown-menu {
+  background-color: #a2d5a2;
+  border: none;
+  border-radius: 0 0 12px 12px;
+  padding: 0.5rem 0;
+  animation: fadeIn 0.3s ease-in-out;
+  min-width: 12rem;
+  margin-top: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Dropdown items */
+.dropdown-item {
+  color: white;
+  padding: 10px 20px;
+  transition: background-color 0.3s, color 0.3s;
+  font-size: 15px;
+}
+
+.dropdown-item:hover {
+  background-color: #7fbf7f;
+  color: black;
+}
+
+/* Cart icon */
+.cart-icon {
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.cart-icon:hover {
+  background-color: #9ecb9e;
+  color: black;
+  transform: scale(1.1);
+}
+
+/* Dropdown animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
